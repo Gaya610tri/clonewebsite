@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flashfood.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="BlueNavbar">
+        <div class="Navbar container">
+            <a class="navbar-brand" href="#"><img src="./navBarLogo.svg" height="35"></a>
+            <div class="navbar-menu" role="button">
+                <a href="#HowItWorks">HOW IT WORKS</a>
+                <a href="#">LOCATIONS</a>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                      ABOUT
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Our story</a></li>
+                      <li><a class="dropdown-item" href="#">food waste</a></li>
+                      <li><a class="dropdown-item" href="#">the team</a></li>
+                      <li><a class="dropdown-item" href="#">press room</a></li>
+                      <li><a class="dropdown-item" href="#">impact report</a></li>
+                    </ul>
+                </div>
+                <a href="#">SUPPORT</a>
+                <a href="#">PARTNER</a>
+                <a href="#" class="button-with-icon">
+                   <div class="nav-button-text">DOWNLOAD</div>
+                </a>
+            </div>
+            <div class="main">
+                <a href="#" class="mobile-button">
+                    <div class="nav-button-text">DOWNLOAD</div>
+                </a>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn" >
+                    <img  class="icon-image" src="mobile-menu.svg" height="40">
+                </label>
+            </div>
+            
+        </div>
+    </div>
+
+    
+    <div class="nav-spacer"></div>
+    <div class="outer-hero-section">
+        <div class="nav-spacer"></div>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Save money and fight against food waste</h1>
+                <p>Get massive savings on fresh food items like meat and produce that are nearing their best before date at grocery stores across Canada and the U.S.</p>
+
+                <div class="download-options">
+                    <a class="raise appleStore" href="#"><img src="appleStore.svg" height="38"></a>
+                    <a class="raise googlePlay" href="#"><img src="googlePlay.svg" height="38"></a>
+                    <a href="#" class="icon-link">
+                        How it works
+                        <img src="./chevron-right.svg">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <section class="Grid-images">
+        <div class="grid-container">
+            <div class="sponsors">
+                <div class="grid-item">
+                    <img class="grid-image" src = "images/meijer.png">
+                </div>
+                <div class="grid-item">
+                    <img class="grid-image" src = "images/kroger.png">
+                </div>
+                <div class="grid-item">
+                    <img class="grid-image" src = "images/giant.png">
+                </div>
+                <div class="grid-item">
+                    <img class="grid-image" src = "images/martins.png">
+                </div>
+                <div class="grid-item">
+                    <img class="grid-image" src = "images/mcous.png">
+                </div>
+                <div class="grid-item">
+                    <img class="grid-image" src = "images/tops.png">
+                </div>
+                <div class="grid-item">
+                    <img class="grid-image" src = "images/familyFare.png">
+                </div>
+                <div class="grid-item">
+                    <img class="grid-image" src = "images/gianteagle.png">
+                </div>
+                <div class="grid-item">
+                    <img class="grid-image" src = "images/Vgrocery.png">
+                </div>
+                <div class="grid-item">
+                    <img class="grid-image" src = "images/stop_shop.png">
+                </div>
+            </div>
+            <br><br>
+            <span class="see-more-imgs">
+                <div class="sponsors">
+                    <div class="grid-item">
+                        <img class="grid-image" src = "images/loblaws.png">
+                    </div>
+                    <div class="grid-item">
+                        <img class="grid-image" src = "images/saveALot.png">
+                    </div>
+                    <div class="grid-item">
+                        <img class="grid-image" src = "images/rcs.png">
+                    </div>
+                    <div class="grid-item">
+                        <img class="grid-image" src = "images/huvee.png">
+                    </div>
+                    <div class="grid-item">
+                        <img class="grid-image" src = "images/provigo.png">
+                    </div>
+                    <div class="grid-item">
+                        <img class="grid-image" src = "images/dominion.png">
+                    </div>
+                    <div class="grid-item">
+                        <img class="grid-image" src = "images/plymouth.png">
+                    </div>
+                    <div class="grid-item">
+                        <img class="grid-image" src = "images/zehrs.png">
+                    </div>
+                    <div class="grid-item">
+                        <img class="grid-image" src = "images/Renspet.png">
+                    </div>
+                    <div class="grid-item">
+                        <img class="grid-image" src = "images/nofrills.png">
+                    </div>
+                </div>
+            </span>
+        </div>
+        <div class="centered-button">
+            <button type="button" class="see-more-btn" onclick="toggleImages()">See More</button>
+            <button type="button" class="see-less-btn" onclick="toggleImages()">See Less</button>
+        </div>
+
+    </section>
+
+    <section class="question">
+        <div class="container center">
+            <div class="ques-box">
+                <div class="ques-text">
+                    <p>Are you a grocery chain that wants to work with Flashfood?</p>
+                </div>  
+                <a href="#" class="learn-more-button">
+                    <div>Learn More</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="HowItWorks">
+        <div class="heading">
+            <h2>How it works</h2>
+        </div>
+    </section>
+    <div class="outer-container first">
+        <div class="inner-container first">
+            <img class="replaced-img" src="images/replaced-img.png">
+            <div class="text-container">
+                <h2>First, use the free app to quickly and easily find discounted food from wherever you are.</h2>
+                <ul class="list">
+                    <li class="list-item">Browse deals of up to 50% off at a grocery store location near you.
+                        <br><a href="/en/locations/home">See Locations ></a>
+                    </li>
+                    <li class="list-item">Choose your discounted food items.</li>
+                    <li class="list-item">Pay right in the app using any major credit card, VISA debit card, or SNAP EBT card.</li>
+                </ul>
+            </div>
+            <img src="images/homeMap.png" alt="" class="map-img">
+        </div>
+    </div>
+    <div class="outer-container second">
+        <div class="inner-container second">
+            <img src="images/homeImage.png" alt="" class="fridge-img">
+            <div class="text-container fridge">
+                <h2>Then, pick up your Flashfood order at the grocery store.</h2>
+                <p style="width:55%">Head to the store, grab your food items from the Flashfood zone, and quickly confirm your order with the customer service desk.</p>
+            </div>
+        </div>
+    </div>
+    <div class="outer-container third">
+        <div class="inner-container third">
+            <div class="text-container">
+                <h2>Finally, enjoy good food, a great deal, and the good deed - you just saved some food from the landfill!</h2>
+                <a href="#" class="icon-link" style="color:#4230dd; text-decoration: none;">
+                    Learn more about Food Waste
+                    <img src="./chevron-right.svg">
+                </a>
+            </div>
+            <img src="images/homeImage2.png"  alt="" class="table-img">
+        </div>
+    </div>
+
+    <section id="HelpedSeveral">
+        <div class="heading">
+            <h2 class="centered-text">We've helped thousands of people save money on their groceries</h2>
+        </div>
+    </section>
+
+    <div class="testimonial outer">
+        <div class="testimonial-collection-list">
+            <div class="testimonial-card">
+                <div class="inner">
+                    <div class="commas"><img src="commas.svg"></div>
+                    <div class="rating"><img src="stars.svg"></div>
+                    <div class="message">Another day and another box of fruit bought off the Flashfood app! I love using this app and keeping perfectly good food from going into the landfill. All of the food posted on the app is reaching its best before date but still perfectly good to eat. And it was only $5.00!😊</div>
+                </div>
+                <div class="name">@ACELIACSTRAVELS FROM AIRDRIE, ALBERTA</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="inner">
+                    <div class="commas"><img src="commas.svg"></div>
+                    <div class="rating"><img src="stars.svg"></div>
+                    <div class="message">I despise wasting food, and I love getting a great deal. flashfood makes it so simple for me to actually save food destined for the dump, and all they ask is that I pay a fraction of the price for it. In my personal opinion, the food is fine! No issues whatsoever! In what world does this service not make perfect sense?</div>
+                </div>
+                <div class="name">PETER T. FROM TORONTO</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="inner">
+                    <div class="commas"><img src="commas.svg"></div>
+                    <div class="rating"><img src="stars.svg"></div>
+                    <div class="message">Wow! I am absolutely delighted with my first box! A great selection of produce carrots, English cucumber, peppers, mushrooms, onions, apples, oranges and the protein (kielbasa, chicken meatballs, teriyaki chicken meatballs, pulled chicken) was awesome as well! Will most certainly order again!</div>
+                </div>
+                <div class="name">PAULINE P. FROM WYANDOTTE, MICHIGAN</div>
+            </div>
+            <div class="testimonial-card">
+                <div class="inner">
+                    <div class="commas"><img src="commas.svg"></div>
+                    <div class="rating"><img src="stars.svg"></div>
+                    <div class="message">Love it. between the wife and I who have the app on both our phones, we saved over $1200. instead of stores throwing out expired food to the dump, they can get rid of food when it's close to expiration dates. love it. I highly recommend it.</div>
+                </div>
+                <div class="name">BRETT C. FROM AJAX</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="outer-hero-section end">
+        <img class="footer-img" src="images/footer.png">
+        <section class="hero-section end">
+            <div class="hero-content end">
+                <h4>ARE YOU READY?</h4>
+                <h1 class="hero-title">Download the free app and save money on groceries now</h1>
+                <div class="download-options">
+                    <a class="raise appleStore" href="#"><img src="appleStore.svg" height="38"></a>
+                    <a class="raise googlePlay" href="#"><img src="googlePlay.svg" height="38"></a>
+                </div>
+            </div>
+            <div>
+                <img src="images/homeBottomImage.jpg">
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer dark">
+        <div class="footer-outer">
+            <div class="footer-link">
+                <a href="#" class="footer-insta-link">Follow @flashfood</a>
+            </div>
+            <div class="footer-grid-container">
+                <div class="w-layout-grid footer-photo-grid">
+                    <img src="images/b1.jpg" class="footer-photo">
+                    <img src="images/b2.jpg" class="footer-photo">
+                    <img src="images/b3.jpg" class="footer-photo">
+                    <img src="images/b4.jpg" class="footer-photo">
+                    <img src="images/b5.jpg" class="footer-photo">
+                </div>
+            </div>
+            <!--<div class="footer-grid-text">
+                <div class="footer-location-cta-wrapper">
+                    <a href="/" class="footer-app-icon-wrapper w-nav-brand w--current">
+                        <img src="footer-logo.svg" alt="The Flashfood app icon " class="footer-app-icon">
+                    </a>
+                    <div class="footer-blob"><img src="bgrnd-paint.svg" loading="lazy" alt="">
+                    </div>
+                    <a href="/en/locations/home" class="link-block-27 w-inline-block">
+                        <div class="footer-cta-text ">Find Flashfood near you →</div>
+                    </a>
+                        <div class="horizontal-div social-icons">
+                                <a href="https://www.instagram.com/flashfood/?hl=en" target="_blank" class="social-media-icon w-inline-block">
+                                <img src="insta-icon.svg" alt="Instagram icon" class="insta icon-img"></a>
+                                <a href="https://www.facebook.com/Flashfood/" target="_blank" class="social-media-icon w-inline-block">
+                                <img src="fb-icon.svg" alt="Facebook icon" class="facebook icon"></a>
+                                <a href="https://www.twitter.com/Flashfood" target="_blank" class="social-media-icon w-inline-block">
+                                <img src="twitter-icon.svg" alt="Twitter icon" class="twitter icon"></a>
+                        </div>
+                </div>
+                        <div class="footer-link-wrap"><a href="/en/the-team" class="footerlink">The Team</a>
+                            <a href="/en/locations/home" class="footerlink">Locations</a>
+                            <a href="/en/story" class="footerlink">Our Story</a>
+                            <a href="/en/food-waste" class="footerlink">Food Waste</a>
+                        </div>
+                        <div class="footer-link-wrap">
+                            <a href="/en/news" class="footerlink">News</a>
+                            <a href="/en/blog" class="footerlink">Blog</a>
+                            <a href="/en/referral" class="footerlink">Refer a Friend</a>
+                        </div>
+                        <div>
+                            <a href="/en/partners" class="footerlink">Partner</a>
+                            <a href="/en/careers" class="footerlink">Careers</a>
+                            <a href="https://help.flashfood.com/hc/en-us" target="_blank" class="footerlink">Support</a>
+                            <a href="https://help.flashfood.com/hc/en-us/requests/new" target="_blank" class="footerlink">Contact Us</a>
+                        </div>
+                        <div><a href="http://www.flashfood.com/en/terms" class="footerlink">Terms of Use</a>
+                            <a href="/en/privacy" class="footerlink">Privacy Policy</a>
+                            <a href="/en/supplier-diversity-policy" class="footerlink">Supplier Diversity Policy</a>
+                            <a href="/en/disclosure" class="footerlink">Responsible Disclosure</a>
+                        </div>
+                    </div>
+                    <div class="horizontal-div spread footer dark">
+                        <div class="text footer dark">© Flashfood Inc. 2023. All rights reserved.</div>
+                    </div>
+                    <div>
+                        <div data-hover="true" data-delay="0" class="lang-dropdown w-dropdown" >
+                            <div class="lang-dropdown w-dropdown-toggle" id="w-dropdown-toggle-1" aria-controls="w-dropdown-list-1" aria-haspopup="menu" aria-expanded="false" role="button" tabindex="0">
+                                <div class="lang-arrow w-icon-dropdown-toggle" aria-hidden="true">
+                                </div>
+                                <img loading="lazy" src="https://assets-global.website-files.com/5e4482baa13a1926b23e2187/6080343e2e0e10bb720ffc84_lang-globe.svg" alt="" class="lang-globe">
+                                <div class="lang-text">EN</div>
+                            </div>
+                            <nav class="lang-popup w-dropdown-list" id="w-dropdown-list-1" aria-labelledby="w-dropdown-toggle-1">
+                                <a href="/fr/accueil" class="lang-menu-link w-dropdown-link" tabindex="0">fr (ca)</a>
+                            </nav>
+                        </div>
+                    </div>
+            </div> -->
+
+            <div class="footer-text-wrapper">
+                <div class="first-box">
+                    <div class="footer-blob"><img src="bgrnd-paint.svg" loading="lazy" alt="">
+                    </div>
+                    <div class="footer-logo">
+                        <a href="#"><img src="footer-logo.svg"></a>
+                    </div>
+                    <a href="/en/locations/home" class="footer-text">
+                        <div>Find Flashfood near you → </div>
+                    </a>
+                    <div class="horizontal-div social-icons">
+                        <a href="https://www.instagram.com/flashfood/?hl=en" target="_blank" class="social-media-icon w-inline-block">
+                        <img src="insta-icon.svg" alt="Instagram icon" class="insta icon-img"></a>
+                        <a href="https://www.facebook.com/Flashfood/" target="_blank" class="social-media-icon w-inline-block">
+                        <img src="fb-icon.svg" alt="Facebook icon" class="facebook icon"></a>
+                        <a href="https://www.twitter.com/Flashfood" target="_blank" class="social-media-icon w-inline-block">
+                        <img src="twitter-icon.svg" alt="Twitter icon" class="twitter icon"></a>
+                    </div>
+                </div>
+
+                <div class="other-boxes">
+                    <div class="footer-link-wrap">
+                        <a href="/en/the-team" class="footerlink">The Team</a>
+                        <a href="/en/locations/home" class="footerlink">Locations</a>
+                        <a href="/en/story" class="footerlink">Our Story</a>
+                        <a href="/en/food-waste" class="footerlink">Food Waste</a>
+                    </div>
+                    <div class="footer-link-wrap">
+                        <a href="/en/news" class="footerlink">News</a>
+                        <a href="/en/blog" class="footerlink">Blog</a>
+                        <a href="/en/referral" class="footerlink">Refer a Friend</a>
+                    </div>
+                    <div>
+                        <a href="/en/partners" class="footerlink">Partner</a>
+                        <a href="/en/careers" class="footerlink">Careers</a>
+                        <a href="https://help.flashfood.com/hc/en-us" target="_blank" class="footerlink">Support</a>
+                        <a href="https://help.flashfood.com/hc/en-us/requests/new" target="_blank" class="footerlink">Contact Us</a>
+                    </div>
+                    <div><a href="http://www.flashfood.com/en/terms" class="footerlink">Terms of Use</a>
+                        <a href="/en/privacy" class="footerlink">Privacy Policy</a>
+                        <a href="/en/supplier-diversity-policy" class="footerlink">Supplier Diversity Policy</a>
+                        <a href="/en/disclosure" class="footerlink">Responsible Disclosure</a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="text footer dark">© Flashfood Inc. 2023. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+
+    
+
+
+
+
+
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
