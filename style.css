@@ -846,6 +846,7 @@ a.mobile-button{
 
 
     .outer-hero-section{
+        width:100%;
         background-image: url(images/hero-image-mobile.png);
     }
 
