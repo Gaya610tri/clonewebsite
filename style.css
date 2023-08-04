@@ -927,7 +927,7 @@ a.mobile-button{
     }
 
     .outer-hero-section{
-        background-image: url(images/mobile-hero-img.png);
+        background-image: url(mobile-hero-img.png);
     }
     .hero-section.end{
         display: flex;
@@ -1117,7 +1117,7 @@ a.mobile-button{
     display: none;
    }
    .outer-hero-section{
-    background-image: url(images/mobile-hero-img.png);
+    background-image: url(mobile-hero-img.png);
    }
 
 }
