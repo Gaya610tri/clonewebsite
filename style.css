@@ -1,6 +1,21 @@
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin:0;
 }
+
+html{
+    width: 100%;
+    height: 100%;
+}
+  
+body {
+    
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+  
 .BlueNavbar{
     height: 150px;
     background-color: rgba(66, 48, 221, 0.8);
@@ -12,6 +27,7 @@
 }
 
 .Navbar.container{
+    width:100%;
     max-width: 1200px;
     display: flex;
     background-color: transparent;
@@ -29,6 +45,7 @@
     float: left;
     min-width: 200px;
 }
+
 
 .navbar-menu{
     transition: all .2s;
@@ -101,6 +118,7 @@ a:hover {
 
 
 .outer-hero-section{
+    
     width: 100%;
     height: 90vh;
     max-height: 100vh;
@@ -118,6 +136,10 @@ a:hover {
 
 }
 
+.hero-section{
+    display: flex;
+}
+
 .hero-content{
     width: 600px;
     clear: none;
@@ -128,15 +150,16 @@ a:hover {
 
 @media (max-width: 1400px){
     .hero-content{
+        margin-top:0px;
         margin-left: 30px;
-        width:500px;
+        width:50%;
     }
 }
 
 .hero-title{
     color: #fff;
     font-family: Figtree,sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 800;
     line-height: 1.3em;
 }
@@ -175,6 +198,7 @@ p{
 }
 
 .nav-spacer {
+    width:100%;
     height: 80px;
     background-color: #4230dd;
     margin-top: 0%;
@@ -185,6 +209,7 @@ p{
 }
 
 .grid-container {
+    width:100%;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -252,6 +277,10 @@ p{
     
 }
 
+.question{
+    display: flex;
+    padding:20px;
+}
 .ques-box{
     border:#cec5c5;
     box-shadow: #cec5c5;
@@ -368,6 +397,10 @@ p{
     font-size: 32px;
     font-weight: 700;
     line-height: 47px;
+}
+
+.text-container.fridge p{
+    width:55%;
 }
 
 ul.list{
@@ -815,6 +848,13 @@ a.mobile-button{
 }
 
 @media (max-width: 972px) {
+    html,body{
+        width:100%;
+        height:100%;
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+    }
 
     
     .navbar-brand{
@@ -885,11 +925,26 @@ a.mobile-button{
         bottom: 0;
         top:auto;
     }
+
+    .outer-hero-section{
+        background-image: url(mobile-hero-img.png);
+    }
+    .hero-section.end{
+        display: flex;
+        flex-direction: column;
+       }
     
     
 }
 
 @media (max-width:765px){
+    html,body{
+        width:100%;
+        height:100%;
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+    }
     .sponsors{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
@@ -944,4 +999,125 @@ a.mobile-button{
 
 }
 
+@media(max-width: 545px){
+    html,body{
+        width:100%;
+        height:100%;
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+    }
+    .sponsors{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
 
+    .hero-section{
+        height: auto;
+        padding: auto 15px 50px 15px;
+    }
+    .outer-hero-section{
+        width:100%;
+        background-image: url(images/hero-image-mobile.png);
+    }
+
+    .hero-content{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        margin:0;
+        padding:20px;
+    }
+    .hero-title{
+        font-size: 2rem;
+    }
+    .nav-spacer{
+        height:40px;
+    }
+
+    .navbar-brand{
+        padding-left: 5px;
+    }
+    .navbar-brand img{
+        height:25px;
+    }
+
+    .Navbar.container{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    a.mobile-button{
+        margin-right:5px;
+        padding-top:10px;
+        padding-bottom: 10px;
+        height:40px;
+    }
+    .checkbtn{
+        padding-right: 10px;
+    }
+
+    .learn-more-button{
+        width:auto;
+    }
+
+    .ques-box{
+        padding: 0;
+    }
+
+    .replaced-img{
+        max-width: 85%;
+        top:0;
+    }
+   .text-container{
+    width: 100%;
+    min-width: 100%;
+    flex-direction: column;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:1rem;
+   }
+   .inner-container{
+    padding:10px;
+   }
+   .text-container.fridge p{
+    width:100%;
+   }
+
+   .table-img{
+    max-width: 95%;
+   }
+   .fridge-img{
+    width: 100%;
+   }
+   .hero-section.end{
+    display: flex;
+    flex-direction: column;
+   }
+   .footer-outer{
+    padding-left:0;
+    padding-right: 0;
+   }
+   .footer-photo-grid{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+   }
+   .footer-text-wrapper{
+    grid-template-columns: 1fr;
+    grid-template-columns: auto;
+   }
+
+   .other-boxes{
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto;
+    padding:0 ;
+   }
+   .footer-blob{
+    display: none;
+   }
+   .outer-hero-section{
+    background-image: url(mobile-hero-img.png);
+   }
+
+}
